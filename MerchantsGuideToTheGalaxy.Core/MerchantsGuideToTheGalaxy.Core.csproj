@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CC10D91-E6ED-4444-8ADB-94F2F116E23A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MerchantsGuideToTheGalaxy.Core</RootNamespace>
+    <AssemblyName>MerchantsGuideToTheGalaxy.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandProcessor\Commands\ClassifierDeclarationCommand.cs" />
+    <Compile Include="CommandProcessor\Commands\Command.cs" />
+    <Compile Include="CommandProcessor\Commands\CommandResult.cs" />
+    <Compile Include="CommandProcessor\Commands\ConstantDeclarationCommand.cs" />
+    <Compile Include="CommandProcessor\Commands\DuplicatedDeclarationException.cs" />
+    <Compile Include="CommandProcessor\Keywords.cs" />
+    <Compile Include="CommandProcessor\Lex.cs" />
+    <Compile Include="CommandProcessor\LineInterpreter.cs" />
+    <Compile Include="CommandProcessor\ParsingException.cs" />
+    <Compile Include="CommandProcessor\Processor.cs" />
+    <Compile Include="CommandProcessor\Commands\QueryCommand.cs" />
+    <Compile Include="CommandProcessor\Symbols\ClassifierSymbol.cs" />
+    <Compile Include="CommandProcessor\Symbols\RomanSymbol.cs" />
+    <Compile Include="CommandProcessor\Symbols\ConstantSymbol.cs" />
+    <Compile Include="CommandProcessor\Symbols\Symbol.cs" />
+    <Compile Include="CommandProcessor\Symbols\SymbolKind.cs" />
+    <Compile Include="CommandProcessor\Symbols\UnitSymbol.cs" />
+    <Compile Include="Roman\InvalidRomanNumberException.cs" />
+    <Compile Include="Roman\InvalidRomanSymbolException.cs" />
+    <Compile Include="Roman\RomanToDecimalConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
