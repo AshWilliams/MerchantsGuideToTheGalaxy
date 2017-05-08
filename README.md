@@ -1,9 +1,5 @@
 # Solution for problem: Merchant's Guide To The Galaxy
 
-This is my solution for the given problem as part of recruitment process to join to ThoughtWorks development team.
-
-This problem took my attention because I've seen an opportunity to create a language interpreter. I like this challenge and I'd like to show something that I can do. I hope did a good work meeting your expectations as an able candidate to compose your team.
-
 The original problem description is at the end of this file.
 
 ## 1. About the solution
